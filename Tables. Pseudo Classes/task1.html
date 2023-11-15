@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Table</title>
+
+    <style>
+      table {
+        font-family: Arial, Helvetica, sans-serif;
+        border-collapse: collapse;
+        text-align: center;
+        width: 80%;
+      }
+
+      caption {
+        text-align: right;
+        text-transform: uppercase;
+        color: rgb(81, 81, 81);
+        font-weight: bold;
+      }
+
+      thead,
+      tfoot {
+        text-transform: uppercase;
+      }
+
+      tbody {
+        border: 1px solid white;
+        border-width: 1px 0;
+      }
+
+      td,
+      th {
+        padding: 14px;
+      }
+
+      td span {
+        border: 2px solid white;
+        border-radius: 50%;
+        width: 25px;
+        height: 25px;
+        display: inline-block;
+        font-weight: bold;
+        line-height: 25px;
+      }
+
+      .col1 {
+        background-color: #dddddd;
+        width: auto;
+      }
+
+      .col2 {
+        background-color: #17d0d3;
+        width: 17%;
+      }
+
+      .col3 {
+        background-color: #8ac149;
+        width: 17%;
+      }
+
+      .col4 {
+        background-color: #feca28;
+        width: 17%;
+      }
+
+      .col5 {
+        background-color: #f44236;
+        width: 17%;
+      }
+    </style>
+  </head>
+
+  <body>
+    <table>
+      <caption>
+        Title table
+      </caption>
+
+      <colgroup>
+        <col class="col1" />
+        <col class="col2" />
+        <col class="col3" />
+        <col class="col4" />
+        <col class="col5" />
+      </colgroup>
+
+      <thead>
+        <td>Specifications</td>
+        <td>Free</td>
+        <td>Basic</td>
+        <td>Standart</td>
+        <td>Premium</td>
+      </thead>
+
+      <tfoot>
+        <td>Price</td>
+        <td>$ 0.00</td>
+        <td>$ 9.99</td>
+        <td>$ 19.99</td>
+        <td>$ 29.99</td>
+      </tfoot>
+
+      <tbody>
+        <tr>
+          <td>Lorem ipsum dolor</td>
+          <td>+</td>
+          <td>+</td>
+          <td>+</td>
+          <td>+</td>
+        </tr>
+
+        <tr>
+          <td>Ratione deserunt modi</td>
+          <td>+</td>
+          <td>+</td>
+          <td>+</td>
+          <td>+</td>
+        </tr>
+
+        <tr>
+          <td>Vel maiores odio</td>
+          <td>-</td>
+          <td>+</td>
+          <td>+</td>
+          <td>+</td>
+        </tr>
+
+        <tr>
+          <td>Minus vel aperiam natus</td>
+          <td>-</td>
+          <td>-</td>
+          <td>+</td>
+          <td>+</td>
+        </tr>
+
+        <tr>
+          <td>Provid minima sapiente</td>
+          <td>-</td>
+          <td>-</td>
+          <td>-</td>
+          <td>+</td>
+        </tr>
+
+        <tr>
+          <td>Evient eaque excepturi</td>
+          <td>-</td>
+          <td>-</td>
+          <td>-</td>
+          <td>+</td>
+        </tr>
+      </tbody>
+    </table>
+  </body>
+</html>

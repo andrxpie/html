@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+
+    <style>
+      body {
+        background-color: #f5f5f5;
+      }
+
+      table {
+        font-family: Arial, Helvetica, sans-serif;
+        border-collapse: collapse;
+      }
+
+      thead > tr > th {
+        padding: 10px;
+      }
+
+      thead > tr > th > span {
+        font-size: 1.5em;
+      }
+
+      thead > tr > th:nth-child(1) {
+        border: 0px;
+        border-radius: 10px 0px 0px 0px;
+        background-color: #7987aa;
+        color: white;
+        width: auto;
+      }
+
+      thead > tr > th:nth-child(2) {
+        background-color: #4f628d;
+        color: white;
+        width: 20%;
+      }
+
+      thead > tr > th:nth-child(3) {
+        background-color: #2f4173;
+        color: white;
+        width: 20%;
+      }
+
+      thead > tr > th:nth-child(4) {
+        background-color: #162954;
+        color: white;
+        width: 20%;
+      }
+
+      thead > tr > th:nth-child(5) {
+        border: 0px;
+        border-radius: 0px 10px 0px 0px;
+        background-color: #071538;
+        color: white;
+        width: 20%;
+      }
+
+      tfoot > tr > th > div {
+        padding: 10px;
+        margin: 15px;
+        background-color: #d3d3d3;
+        color: #646464;
+        border: 1px solid #b7b7b7;
+        text-transform: uppercase;
+      }
+
+      tfoot > tr > th:first-child {
+        border: 0px;
+        border-radius: 0px 0px 0px 10px;
+      }
+
+      tfoot > tr > th:last-child {
+        border: 0px;
+        border-radius: 0px 0px 10px 0px;
+      }
+
+      tfoot > tr > th:nth-child(odd) {
+        background-color: #dbdbdb;
+      }
+
+      tfoot > tr > th:nth-child(even) {
+        background-color: #e7e7e7;
+      }
+
+      tbody > tr > td {
+        text-align: center;
+        padding: 15px;
+      }
+
+      tbody > tr > td:first-child {
+        text-align: left;
+      }
+
+      tbody > tr:nth-child(odd) > td:nth-child(odd) {
+        background-color: #dbdbdb;
+      }
+
+      tbody > tr:nth-child(even) > td:nth-child(odd) {
+        background-color: #ececec;
+      }
+
+      tbody > tr:nth-child(odd) > td:nth-child(even) {
+        background-color: #e7e7e7;
+      }
+    </style>
+  </head>
+  <body>
+    <table>
+      <colgroup>
+        <col class="colum1" />
+        <col class="colum2" />
+        <col class="colum3" />
+        <col class="colum4" />
+        <col class="colum5" />
+      </colgroup>
+
+      <thead>
+        <tr>
+          <th>Choose your plan</th>
+          <th>starter<br /><br /><span>$10</span><br />per mounth</th>
+          <th>econom<br /><br /><span>$30</span><br />per mounth</th>
+          <th>standart<br /><br /><span>$59</span><br />per mounth</th>
+          <th>profesional<br /><br /><span>$99</span><br />per mounth</th>
+        </tr>
+      </thead>
+
+      <tfoot>
+        <tr>
+          <th></th>
+          <th><div>Start</div></th>
+          <th><div>Start</div></th>
+          <th><div>Start</div></th>
+          <th><div>Start</div></th>
+        </tr>
+      </tfoot>
+
+      <tbody>
+        <tr>
+          <td>Amount of space</td>
+          <td>20GB</td>
+          <td>40GB</td>
+          <td>110GB</td>
+          <td>Unlimited</td>
+        </tr>
+
+        <tr>
+          <td>Bandwidth per mounth</td>
+          <td>120GB</td>
+          <td>240GB</td>
+          <td>610GB</td>
+          <td>1300GB</td>
+        </tr>
+
+        <tr>
+          <td>Email accounts</td>
+          <td>1</td>
+          <td>15</td>
+          <td>60</td>
+          <td>Unlimited</td>
+        </tr>
+
+        <tr>
+          <td>MySQL databases</td>
+          <td>1</td>
+          <td>15</td>
+          <td>60</td>
+          <td>Unlimited</td>
+        </tr>
+
+        <tr>
+          <td>24h support</td>
+          <td>No</td>
+          <td>Yes</td>
+          <td>Yes</td>
+          <td>Yes</td>
+        </tr>
+
+        <tr>
+          <td>Support tickets per mounth</td>
+          <td>2</td>
+          <td>6</td>
+          <td>14</td>
+          <td>20</td>
+        </tr>
+      </tbody>
+    </table>
+  </body>
+</html>
