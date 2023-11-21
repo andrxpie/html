@@ -29,26 +29,26 @@
         padding: 7px 0px;
       }
 
-      ol.prettie li::first-line {
+      ol.prettie li > span {
+        padding: 7px 20px;
         background-color: #9d3649;
-        
       }
 
       ol.prettie li::before {
         counter-increment: num;
         content: counter(num) ".";
         background-color: #c66377;
-        padding: 0px 10px;
+        margin: 10px;
       }
     </style>
   </head>
   <body>
     <ol class="prettie">
-      <li>Apple</li>
-      <li>Orange</li>
-      <li>Pineapple</li>
-      <li>Pear</li>
-      <li>Cherry</li>
+      <li><span>Apple</span></li>
+      <li><span>Orange</span></li>
+      <li><span>Pineapple</span></li>
+      <li><span>Pear</span></li>
+      <li><span>Cherry</span></li>
     </ol>
   </body>
 </html>
