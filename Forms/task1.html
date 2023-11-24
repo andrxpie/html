@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Sing Up</title>
+
+    <style>
+      body {
+        background-color: #e35d44;
+        font-family: Arial, Helvetica, sans-serif;
+        width: 40%;
+        margin: 50px auto;
+      }
+
+      form {
+        display: flex;
+        flex-direction: column;
+        background-color: #e6e4e5;
+        gap: 20px;
+        padding: 20px;
+        box-shadow: 0px 0px 15px 5px rgba(0, 0, 0, 0.53);
+      }
+
+      form h1 {
+        align-self: center;
+      }
+
+      button {
+        outline: none;
+      }
+
+      input.credentials {
+        outline: none;
+        border: none;
+        padding: 10px 30px;
+        text-align: center;
+      }
+
+      input.credentials::placeholder {
+        text-align: center;
+        font-weight: bold;
+        color: #dfdad8;
+      }
+
+      button.login {
+        background-color: #33a75c;
+        color: white;
+        border: none;
+        padding: 10px 30px;
+        box-shadow: 0px 5px 0px 0px rgba(15, 111, 48, 1);
+      }
+
+      button.forgotpass {
+        background-color: transparent;
+        border: none;
+        color: #e35d44;
+      }
+
+      label {
+        color: white;
+        text-align: center;
+        display: block;
+        margin: 20px;
+      }
+
+      div.loginwith {
+        display: flex;
+        align-items: stretch;
+        gap: 10px;
+      }
+
+      button.facebook {
+        background-color: #3a5aa2;
+        border: none;
+        color: white;
+        width: 20%;
+        margin-left: auto;
+        flex-grow: 1;
+      }
+
+      button.twitter {
+        background-color: #1ab6eb;
+        border: none;
+        color: white;
+        width: 20%;
+        margin-right: auto;
+        flex-grow: 1;
+      }
+
+      div.loginwithcontent {
+        display: flex;
+        gap: 0px;
+        justify-content: center;
+      }
+
+      div > label {
+        margin: 10px 10px;
+      }
+    </style>
+  </head>
+  <body>
+    <form action="#">
+      <h1>Member Login</h1>
+
+      <input type="text" placeholder="Username" class="credentials" />
+      <input type="password" placeholder="Password" class="credentials" />
+
+      <button type="submit" class="login">Login</button>
+      <button type="submit" class="forgotpass">
+        <h3>Forgot password?</h3>
+      </button>
+    </form>
+
+    <label>... or log in with:</label>
+
+    <div class="loginwith">
+      <button type="submit" class="facebook">
+        <div class="loginwithcontent">
+          <img src="./icons/facebook.svg" />
+          <label>Facebook</label>
+        </div>
+      </button>
+
+      <button type="submit" class="twitter">
+        <div class="loginwithcontent">
+          <img src="./icons/twitter.svg" />
+          <label>Twitter</label>
+        </div>
+      </button>
+    </div>
+  </body>
+</html>
