@@ -48,15 +48,29 @@
 
       article.biography {
         width: 70%;
-        text-wrap: balance;
+        text-wrap: justify;
         display: inline-block;
       }
 
       article.shortbio {
-        width: 20%;
         background-color: #e7e7e7;
         margin: 20px;
         display: inline-block;
+        vertical-align: top;
+      }
+
+      article.shortbio > div > img {
+        padding: 10px;
+      }
+
+      th {
+        vertical-align: top;
+        text-align: left;
+        padding: 0px 10px;
+      }
+
+      td {
+        padding: 0px 0px 10px 0px;
       }
 
       .blockquote {
@@ -144,8 +158,47 @@
 
       <article class="shortbio">
         <div>
-          <img src="./icon_practice/shakespeare.jpg" width="171" height="219"/>
+          <img src="./icon_practice/shakespeare.jpg" width="264"/>
         </div>
+
+        <table>
+          <tbody>
+            <tr>
+              <th>Born</th>
+              <td>26 April 1564</td>
+            </tr>
+
+            <tr>
+              <th>Died</th>
+              <td>23 April 1616</td>
+            </tr>
+
+            <tr>
+              <th>Spouse</th>
+              <td>Anne Hathaway (m. 1582)</td>
+            </tr>
+
+            <tr>
+              <th>Children</th>
+              <td>
+                Susanna Hall
+                <br/>
+                Hamnet Shakespeare
+                <br/>
+                Judith Quiney
+              </td>
+            </tr>
+
+            <tr>
+              <th>Parents</th>
+              <td>
+                John Shakespeare (father)
+                <br />
+                Mary Arden (mother)
+              </td>
+            </tr>
+          </tbody>
+        </table>
       </article>
     </div>
   </body>
