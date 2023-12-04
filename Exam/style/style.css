@@ -1,0 +1,87 @@
+body {
+  margin: 0;
+  background-color: #eaeaea;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+header {
+  background-color: #f6f6f6;
+  display: inline-block;
+  height: auto;
+  background-color: f6f6f6;
+  width: 15%;
+  position: sticky;
+  top: 0;
+  left: 0;
+  border-right: 3px solid #b5b5b5;
+}
+header div {
+  padding: 20px;
+  border-bottom: 2px solid #d1d1d1;
+}
+header div h2 {
+  margin: 0;
+  color: #494543;
+}
+header nav {
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  margin: 20px;
+}
+header nav li {
+  display: flex;
+  align-items: center;
+  transition: 0.15s;
+  color: #808080;
+}
+header nav li:hover {
+  color: white;
+  background-color: #c32056;
+}
+header nav li:hover #gray {
+  display: none;
+}
+header nav li:hover #white {
+  display: block;
+}
+header nav li #gray {
+  width: 20px;
+  padding: 20px;
+}
+header nav li #white {
+  width: 20px;
+  padding: 20px;
+  display: none;
+}
+
+#dashboard {
+  display: inline-block;
+  margin-left: 20px;
+}
+#dashboard div.panel {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  gap: 20px;
+}
+#dashboard div.panel div.panelItem {
+  background-color: #f6f6f6;
+  padding: 40px;
+}
+#dashboard div.panel div.panelItem div.upperPart {
+  display: flex;
+  border-bottom: 2px solid #d1d1d1;
+  margin-bottom: 20px;
+}
+#dashboard div.panel div.panelItem div.upperPart img[id=icon] {
+  background-color: blue;
+  position: relative;
+  top: -70px;
+  padding: 30px;
+  width: 50px;
+}
+#dashboard div.panel div.panelItem div.upperPart #values {
+  display: grid;
+  grid-template-rows: 1rf 1rf;
+  justify-items: end;
+}/*# sourceMappingURL=style.css.map */
