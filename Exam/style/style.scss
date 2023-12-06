@@ -2,22 +2,20 @@ body {
   margin: 0;
   background-color: #eaeaea;
   font-family: Arial, Helvetica, sans-serif;
+  display: flex;
 }
 
 header {
   background-color: #f6f6f6;
-  display: inline-block;
-  height: auto;
-  background-color: f6f6f6;
+  border-right: 3px solid #b5b5b5;
   width: 15%;
-  position: sticky;
   top: 0;
   left: 0;
-  border-right: 3px solid #b5b5b5;
+  bottom: 0;
 
   div {
-    padding: 20px;
     border-bottom: 2px solid #d1d1d1;
+    padding: 20px;
 
     h2 {
       margin: 0;
@@ -27,15 +25,18 @@ header {
 
   nav {
     list-style: none;
-    display: flex;
-    flex-direction: column;
-    margin: 20px;
+    margin-top: 20px;
+    margin-left: 10px;
+    margin-right: 10px;
+    margin-bottom: 20px;
 
-    li {
+    a {
       display: flex;
       align-items: center;
       transition: 0.15s;
       color: #808080;
+      text-decoration: none;
+      height: 55px;
 
       &:hover {
         color: white;
@@ -65,35 +66,268 @@ header {
 }
 
 #dashboard {
-  display: inline-block;
-  margin-left: 20px;
+  margin-left: 2%;
+  margin-right: 2%;
+  width: 90%;
 
-  div.panel {
+  > h2 {
+    margin-top: 20px;
+    margin-bottom: 80px;
+    color: #494543;
+  }
+
+  div.panelRow1 {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr 1fr;
     gap: 20px;
 
     div.panelItem {
       background-color: #f6f6f6;
-      padding: 40px;
-      
+      border-left: 1px solid #d1d1d1;
+      border-top: 1px solid #d1d1d1;
+      border-right: 3px solid #b5b5b5;
+      border-bottom: 3px solid #b5b5b5;
+      color: #494543;
+      padding: 30px;
+
       div.upperPart {
         display: flex;
         border-bottom: 2px solid #d1d1d1;
         margin-bottom: 20px;
+        justify-content: space-between;
 
-        img[id=icon] {
-          background-color: blue;
+        > img {
           position: relative;
-          top: -70px;
-          padding: 30px;
-          width: 50px;
+          top: -50px;
+          padding: 15px;
+          width: 35px;
+          height: 35px;
         }
 
         #values {
           display: grid;
           grid-template-rows: 1rf 1rf;
-          justify-items: end;
+          text-align: right;
+
+          > div {
+            font-size: 1.5em;
+          }
+        }
+
+        #usedSpace {
+          background-color: #448b00;
+        }
+
+        #revenue {
+          background-color: #d89e24;
+        }
+
+        #fixedIssues {
+          background-color: #274d97;
+        }
+
+        #followers {
+          background-color: #c32056;
+        }
+      }
+
+      div.message {
+        display: flex;
+        align-items: center;
+        color: #9c9899;
+        gap: 10px;
+      }
+    }
+  }
+
+  div.panelRow2 {
+    margin-top: 50px;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 20px;
+
+    div.panelItem {
+      background-color: #f6f6f6;
+      border-left: 1px solid #d1d1d1;
+      border-top: 1px solid #d1d1d1;
+      border-right: 3px solid #b5b5b5;
+      border-bottom: 3px solid #b5b5b5;
+      padding: 30px;
+
+      div.upperPart {
+        border-bottom: 2px solid #d1d1d1;
+        margin-bottom: 20px;
+
+        > img {
+          width: 100%;
+          box-sizing: border-box;
+          position: relative;
+          top: -50px;
+          padding: 15px;
+        }
+
+        div.values {
+          display: grid;
+          grid-template-rows: 1rf 1rf;
+          margin-top: -40px;
+          color: #494543;
+
+          > div {
+            font-size: 1.5em;
+          }
+
+          > span {
+            margin-bottom: 20px;
+          }
+        }
+      }
+
+      #dailySales {
+        background-color: #448b00;
+      }
+
+      #emailSubscriptions {
+        background-color: #d89e24;
+      }
+
+      #completedTasks {
+        background-color: #274d97;
+      }
+
+      div.message {
+        display: flex;
+        align-items: center;
+        color: #9c9899;
+        gap: 10px;
+      }
+    }
+  }
+
+  div.panelRow3 {
+    margin-top: 50px;
+    margin-bottom: 50px;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 20px;
+
+    div.panelItem {
+      background-color: #f6f6f6;
+      border-left: 1px solid #d1d1d1;
+      border-top: 1px solid #d1d1d1;
+      border-right: 3px solid #b5b5b5;
+      border-bottom: 3px solid #b5b5b5;
+      padding: 30px;
+
+      div.headerPart1 {
+        display: flex;
+        align-items: center;
+        gap: 10px;
+        background-color: #d89e24;
+        border-right: 2px solid #d1d1d1;
+        border-bottom: 2px solid #d1d1d1;
+        margin-bottom: 20px;
+        position: relative;
+        top: -50px;
+        padding: 15px;
+        color: white;
+
+        > a {
+          display: flex;
+          align-self: center;
+          gap: 10px;
+          text-decoration: none;
+          color: white;
+          padding: 10px;
+          transition: 0.5s;
+
+          &:hover {
+            background-color: #dead49;
+          }
+        }
+      }
+
+      > ul {
+        margin-top: -40px;
+        list-style: none;
+        width: 100%;
+
+        > li {
+          margin: 10px;
+          display: flex;
+          align-items: center;
+          gap: 20px;
+          justify-content: space-between;
+          margin-left: -40px;
+          margin-right: 40px;
+          border-bottom: 1px solid #d1d1d1;
+
+          &:last-child {
+            border-bottom: none;
+          }
+
+          > input {
+            margin-left: 10px;
+          }
+
+          > span {
+            text-wrap: wrap;
+            width: 70%;
+          }
+
+          > div > img {
+            margin: 10px;
+            width: 20px;
+          }
+        }
+      }
+
+      div.headerPart2 {
+        background-color: #274d97;
+        border-right: 2px solid #d1d1d1;
+        border-bottom: 2px solid #d1d1d1;
+        margin-bottom: 20px;
+        position: relative;
+        top: -50px;
+        padding: 15px;
+        color: white;
+
+        > div {
+          font-size: 1.2em;
+          margin-bottom: 20px;
+        }
+      }
+
+      > ul.table {
+        > li {
+          align-items: flex-start;
+
+          > div {
+            margin-top: 10px;
+            margin-bottom: 10px;
+            margin-left: 20px;
+            margin-right: 20px;
+
+            &:first-child {
+              width: 1%;
+            }
+
+            &:nth-child(2) {
+              width: 40%
+            }
+
+            &:nth-child(3) {
+              width: 25%
+            }
+
+            &:last-child {
+              width: 25%;
+            }
+          }
+
+          &:first-child {
+            color: #31af91;
+            font-weight: bold;
+          }
         }
       }
     }

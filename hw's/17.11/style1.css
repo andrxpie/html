@@ -1,0 +1,28 @@
+div.border {
+  background-color: transparent;
+  border: 5px solid #ff7e28;
+  height: 50px;
+  width: 30%;
+  margin-left: auto;
+  margin-right: auto;
+  position: relative;
+  overflow: hidden;
+}
+
+div.border > div.block {
+  background-color: #ff7e28;
+  height: 50px;
+  position: absolute;
+  width: 50px;
+  animation: slide 1s linear infinite;
+}
+
+@keyframes slide {
+  from {
+    left: 0;
+  }
+
+  to {
+    left: 100%;
+  }
+}

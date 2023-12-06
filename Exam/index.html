@@ -12,95 +12,232 @@
       <div>
         <h2>Company</h2>
       </div>
-
       <nav>
-        <li>
+        <a href="#dashboard">
           <img id="gray" src="./images/dashboard_gray.svg" />
           <img id="white" src="./images/dashboard_white.svg" />
           <span>Dashboard</span>
-        </li>
-
-        <li>
+        </a>
+        <a href="#userprofile">
           <img id="gray" src="./images/account_gray.svg" />
           <img id="white" src="./images/account_White.svg" />
           <span>User Profile</span>
-        </li>
-
-        <li>
+        </a>
+        <a href="#maps">
           <img id="gray" src="./images/map_gray.svg" />
           <img id="white" src="./images/map_white.png" />
           <span>Maps</span>
-        </li>
-
-        <li>
+        </a>
+        <a href="#notifications">
           <img id="gray" src="./images/notify_gray.svg" />
           <img id="white" src="./images/notify_white.png" />
           <span>Notifications</span>
-        </li>
-
-        <li>
+        </a>
+        <a href="#support">
           <img id="gray" src="./images/support_gray.svg" />
           <img id="white" src="./images/support_white.png" />
           <span>Support</span>
-        </li>
+        </a>
       </nav>
     </header>
-
     <section id="dashboard">
       <h2>Dashboard</h2>
-
-      <div class="panel">
-        <div id="usedSpace" class="panelItem">
+      <div class="panelRow1">
+        <div class="panelItem">
           <div class="upperPart">
-            <img id="icon" src="./images/data_white.svg" />
+            <img id="usedSpace" src="./images/data_white.svg" />
             <div id="values">
               <span>Used Space</span>
-              <h2>49/50 GB</h2>
+              <div>49/50 GB</div>
             </div>
           </div>
-          <div id="message">
+          <div class="message">
             <img src="./images/alert.png" />
             Get more space...
           </div>
         </div>
-        <div id="revenue" class="panelItem">
-          <div>
-            <img id="icon" src="./images/shop_white.svg" />
+        <div class="panelItem">
+          <div class="upperPart">
+            <img id="revenue" src="./images/shop_white.svg" />
             <div id="values">
               <span>Revenue</span>
-              <h2>$ 34,245</h2>
+              <div>$ 34,245</div>
             </div>
           </div>
-          <div id="message">
+          <div class="message">
             <img src="./images/calendar.png" />
             Last 24 Hours
           </div>
         </div>
-        <div id="fixed_issues" class="panelItem">
-          <div>
-            <img id="icon" src="./images/tag_white.svg" />
+        <div class="panelItem">
+          <div class="upperPart">
+            <img id="fixedIssues" src="./images/tag_white.svg" />
             <div id="values">
               <span>Fixed issues</span>
-              <h2>75</h2>
+              <div>75</div>
             </div>
           </div>
-          <div id="message">
+          <div class="message">
             <img src="./images/down.png" />
             Tracked from GitHub
           </div>
         </div>
-        <div id="followers" class="panelItem">
-          <div>
-            <img id="icon" src="./images/paperplane_white.svg" />
+        <div class="panelItem">
+          <div class="upperPart">
+            <img id="followers" src="./images/paperplane_white.svg" />
             <div id="values">
               <span>Followers</span>
-              <h2>+ 245</h2>
+              <div>+ 245</div>
             </div>
           </div>
-          <div id="message">
+          <div class="message">
             <img src="./images/time.png" />
             Just updated
           </div>
+        </div>
+      </div>
+      <div class="panelRow2">
+        <div class="panelItem">
+          <div class="upperPart">
+            <img id="dailySales" src="./images/graphics.svg" />
+            <div class="values">
+              <div>Daily Sales</div>
+              <span>55% increase in today sales</span>
+            </div>
+          </div>
+          <div class="message">
+            <img src="./images/time.png" />
+            updated 4 minutes ago
+          </div>
+        </div>
+        <div class="panelItem">
+          <div class="upperPart">
+            <img id="emailSubscriptions" src="./images/graphics.svg" />
+            <div class="values">
+              <div>Email Subscriptions</div>
+              <span>Last Campaign perfomance</span>
+            </div>
+          </div>
+          <div class="message">
+            <img src="./images/time.png" />
+            campaign sent 2 days ago
+          </div>
+        </div>
+        <div class="panelItem">
+          <div class="upperPart">
+            <img id="completedTasks" src="./images/graphics.svg" />
+            <div class="values">
+              <div>Completed Tasks</div>
+              <span>Last Campaign perfomance</span>
+            </div>
+          </div>
+          <div class="message">
+            <img src="./images/time.png" />
+            campaign event 2 days ago
+          </div>
+        </div>
+      </div>
+      <div class="panelRow3">
+        <div class="panelItem">
+          <div class="headerPart1">
+            <span>Tasks:</span>
+            <a href="#bugs">
+              <img src="./images/bug.svg" />
+              Bugs
+            </a>
+            <a href="#website">
+              <img src="./images/web.svg" />
+              Website
+            </a>
+            <a href="#server">
+              <img src="./images/cloud.svg" />
+              Cloud
+            </a>
+          </div>
+          <ul class="list">
+            <li>
+              <input type="checkbox" checked />
+              <span
+                >Sign contract for "What are conference organizers afraid
+                of?"</span
+              >
+              <div>
+                <img src="./images/edit.png" />
+                <img src="./images/remove.png" />
+              </div>
+            </li>
+            <li>
+              <input type="checkbox" />
+              <span
+                >Lines From bad russian Literature? Or E-mails From My
+                Boss?</span
+              >
+              <div>
+                <img src="./images/edit.png" />
+                <img src="./images/remove.png" />
+              </div>
+            </li>
+            <li>
+              <input type="checkbox" />
+              <span
+                >Sign contract for "What are conference organizers afraid
+                of?"</span
+              >
+              <div>
+                <img src="./images/edit.png" />
+                <img src="./images/remove.png" />
+              </div>
+            </li>
+            <li>
+              <input type="checkbox" checked />
+              <span
+                >Sign contract for "What are conference organizers afraid
+                of?"</span
+              >
+              <div>
+                <img src="./images/edit.png" />
+                <img src="./images/remove.png" />
+              </div>
+            </li>
+          </ul>
+        </div>
+        <div class="panelItem">
+          <div class="headerPart2">
+            <div>Employees Stats</div>
+            <span>New employees on 6th December, 2023</span>
+          </div>
+          <ul class="table">
+            <li>
+              <div>ID</div>
+              <div>Name</div>
+              <div>Salary</div>
+              <div>Country</div>
+            </li>
+            <li>
+              <div>1</div>
+              <div>Dakota Rice</div>
+              <div>$36.738</div>
+              <div>Niger</div>
+            </li>
+            <li>
+              <div>1</div>
+              <div>Dakota Rice</div>
+              <div>$36.738</div>
+              <div>Niger</div>
+            </li>
+            <li>
+              <div>1</div>
+              <div>Dakota Rice</div>
+              <div>$36.738</div>
+              <div>Niger</div>
+            </li>
+            <li>
+              <div>1</div>
+              <div>Dakota Rice</div>
+              <div>$36.738</div>
+              <div>Niger</div>
+            </li>
+          </ul>
         </div>
       </div>
     </section>

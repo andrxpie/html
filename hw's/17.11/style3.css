@@ -1,0 +1,50 @@
+body {
+  background-color: #fcfad3;
+  text-align: center;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+h1 {
+  margin-top: 10%;
+  margin-bottom: 100px;
+}
+
+.calc {
+  position: relative;
+  transform: rotate(-33deg) translate(0, 100px) scale(0.5);
+  animation: move 2s ease-out both;
+}
+
+.book {
+  position: relative;
+  transform: rotate(-15deg);
+  animation: move 2s ease-out 0.5s  both;
+}
+
+.paper {
+  position: relative;
+  transform: rotate(15deg);
+  animation: move 2s ease-out 1s  both;
+}
+
+.pallete {
+  position: relative;
+  transform: rotate(-137deg) translate(0, -100px) scale(0.5);
+  animation: move 2s ease-out 1.5s  both;
+}
+
+.pencil {
+  position: relative;
+  rotate: 90deg;
+  animation: move 2s ease-out 2s both;
+}
+
+@keyframes move {
+  from {
+    top: 100vh;
+  }
+
+  to {
+    top: 0;
+  }
+}

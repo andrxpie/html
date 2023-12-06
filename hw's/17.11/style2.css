@@ -1,0 +1,13 @@
+body {
+  text-align: center;
+}
+
+img {
+  filter: grayscale();
+  transition: 0.5s;
+}
+
+img:hover {
+  filter: none;
+  scale: 2;
+}
