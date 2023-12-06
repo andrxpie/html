@@ -9,9 +9,10 @@ header {
   background-color: #f6f6f6;
   border-right: 3px solid #b5b5b5;
   width: 15%;
+  position: fixed;
   top: 0;
-  left: 0;
   bottom: 0;
+  left: 0;
 }
 header div {
   border-bottom: 2px solid #d1d1d1;
@@ -57,7 +58,7 @@ header nav a #white {
 }
 
 #dashboard {
-  margin-left: 2%;
+  margin-left: 17%;
   margin-right: 2%;
   width: 90%;
 }
@@ -87,6 +88,10 @@ header nav a #white {
   justify-content: space-between;
 }
 #dashboard div.panelRow1 div.panelItem div.upperPart > img {
+  border-top: 1px solid #d1d1d1;
+  border-left: 1px solid #d1d1d1;
+  border-right: 3px solid #b5b5b5;
+  border-bottom: 3px solid #b5b5b5;
   position: relative;
   top: -50px;
   padding: 15px;
@@ -138,6 +143,10 @@ header nav a #white {
   margin-bottom: 20px;
 }
 #dashboard div.panelRow2 div.panelItem div.upperPart > img {
+  border-top: 1px solid #d1d1d1;
+  border-left: 1px solid #d1d1d1;
+  border-right: 3px solid #b5b5b5;
+  border-bottom: 3px solid #b5b5b5;
   width: 100%;
   box-sizing: border-box;
   position: relative;
@@ -191,8 +200,10 @@ header nav a #white {
   align-items: center;
   gap: 10px;
   background-color: #d89e24;
-  border-right: 2px solid #d1d1d1;
-  border-bottom: 2px solid #d1d1d1;
+  border-top: 1px solid #d1d1d1;
+  border-left: 1px solid #d1d1d1;
+  border-right: 3px solid #b5b5b5;
+  border-bottom: 3px solid #b5b5b5;
   margin-bottom: 20px;
   position: relative;
   top: -50px;
@@ -242,8 +253,10 @@ header nav a #white {
 }
 #dashboard div.panelRow3 div.panelItem div.headerPart2 {
   background-color: #274d97;
-  border-right: 2px solid #d1d1d1;
-  border-bottom: 2px solid #d1d1d1;
+  border-top: 1px solid #d1d1d1;
+  border-left: 1px solid #d1d1d1;
+  border-right: 3px solid #b5b5b5;
+  border-bottom: 3px solid #b5b5b5;
   margin-bottom: 20px;
   position: relative;
   top: -50px;
@@ -278,4 +291,22 @@ header nav a #white {
 #dashboard div.panelRow3 div.panelItem > ul.table > li:first-child {
   color: #31af91;
   font-weight: bold;
+}
+
+footer {
+  display: flex;
+  justify-content: space-between;
+  border-top: 2px solid #d1d1d1;
+}
+footer > div {
+  display: flex;
+  gap: 20px;
+}
+footer > div > a {
+  text-decoration: none;
+  color: #494543;
+  padding: 20px;
+}
+footer > span {
+  padding: 40px;
 }/*# sourceMappingURL=style.css.map */
