@@ -14,6 +14,16 @@ header {
   bottom: 0;
   left: 0;
 }
+@media (max-width: 1280px) and (min-width: 901px) {
+  header {
+    width: 20%;
+  }
+}
+@media (max-width: 900px) {
+  header {
+    display: none;
+  }
+}
 header div {
   border-bottom: 2px solid #d1d1d1;
   padding: 20px;
@@ -62,15 +72,56 @@ header nav a #white {
   margin-right: 2%;
   width: 90%;
 }
-#dashboard > h2 {
-  margin-top: 20px;
-  margin-bottom: 80px;
+@media (max-width: 1280px) and (min-width: 901px) {
+  #dashboard {
+    width: 80%;
+    margin-left: 22%;
+  }
+}
+@media (max-width: 900px) {
+  #dashboard {
+    width: 96%;
+    margin-left: 2%;
+  }
+}
+#dashboard > div {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  margin: 2%;
+  margin-bottom: 4%;
+}
+#dashboard > div > img {
+  width: 20px;
+  height: 20px;
+  display: none;
+}
+@media (max-width: 900px) {
+  #dashboard > div > img {
+    display: inline;
+  }
+}
+#dashboard > div > h2 {
+  margin-left: 0;
   color: #494543;
 }
 #dashboard div.panelRow1 {
   display: grid;
   grid-template-columns: 1fr 1fr 1fr 1fr;
   gap: 20px;
+}
+@media (max-width: 1280px) and (min-width: 501px) {
+  #dashboard div.panelRow1 {
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    row-gap: 40px;
+  }
+}
+@media (max-width: 560px) {
+  #dashboard div.panelRow1 {
+    grid-template-columns: auto;
+    grid-template-rows: 1fr 1fr;
+  }
 }
 #dashboard div.panelRow1 div.panelItem {
   background-color: #f6f6f6;
@@ -130,6 +181,13 @@ header nav a #white {
   grid-template-columns: 1fr 1fr 1fr;
   gap: 20px;
 }
+@media (max-width: 700px) {
+  #dashboard div.panelRow2 {
+    grid-template-columns: auto;
+    grid-template-rows: 1fr 1fr 1fr;
+    row-gap: 40px;
+  }
+}
 #dashboard div.panelRow2 div.panelItem {
   background-color: #f6f6f6;
   border-left: 1px solid #d1d1d1;
@@ -137,6 +195,9 @@ header nav a #white {
   border-right: 3px solid #b5b5b5;
   border-bottom: 3px solid #b5b5b5;
   padding: 30px;
+  box-sizing: border-box;
+  height: 100%;
+  width: 100%;
 }
 #dashboard div.panelRow2 div.panelItem div.upperPart {
   border-bottom: 2px solid #d1d1d1;
@@ -187,6 +248,13 @@ header nav a #white {
   grid-template-columns: 1fr 1fr;
   gap: 20px;
 }
+@media (max-width: 1280px) {
+  #dashboard div.panelRow3 {
+    grid-template-columns: auto;
+    grid-template-rows: 1fr 1fr;
+    row-gap: 40px;
+  }
+}
 #dashboard div.panelRow3 div.panelItem {
   background-color: #f6f6f6;
   border-left: 1px solid #d1d1d1;
@@ -194,6 +262,8 @@ header nav a #white {
   border-right: 3px solid #b5b5b5;
   border-bottom: 3px solid #b5b5b5;
   padding: 30px;
+  height: 100%;
+  box-sizing: border-box;
 }
 #dashboard div.panelRow3 div.panelItem div.headerPart1 {
   display: flex;
